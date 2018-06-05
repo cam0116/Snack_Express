@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: todo_app_back_end_development
+  database: snack_express
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -38,10 +38,13 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: todo_app_back_end_test
+  database: snack_express_test
 
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: todo_app_back_end_production
+  database: snack_express_production
+
+
+
