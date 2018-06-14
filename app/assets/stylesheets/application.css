@@ -1,21 +1,49 @@
 .header{
     color:#9e1d1d;
     font-family: 'Oswald', sans-serif;
+    padding-left: 6%;
 }
 
 .header2{
     color:#da9c0f;
     font-family: 'Oswald', sans-serif;
+
+}
+
+.header3{
+    font-family: 'Skranji', cursive;
+    
+}
+
+.header4{
+     font-family: 'Oswald', sans-serif;
+}
+
+.header5{
+     font-family: 'Oswald', sans-serif;
+     padding-left:15%;
+     color:#da9c0f;
+}
+.display{
+     font-family: 'Oswald', sans-serif;
+   padding-left:10%;
+    
+}
+
+
+
+a{
+   font-family: 'Oswald', sans-serif;
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 20%;
+    width: 44%;
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid black;
     text-align: center;
     padding: 8px;
 }
@@ -24,5 +52,10 @@ td, th {
 .dog{
     margin:0 auto;
     width:400px;
+  
+}
+
+.button1{
+    padding-left: 12%;
 }
 
