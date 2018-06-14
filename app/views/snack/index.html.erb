@@ -1,6 +1,15 @@
-<h1>SnackExpress</h1>
 
-<div id="new-order-block">
-    <a href="/snack/new" class="button add-new-order-button" id="add-new-order-button">Place Order</a>
-    
-</div>
+<h1>SnackExpress Database</h1>
+<h4>View and collect all orders in the database!</h4>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<ul class="card">
+<% @order.each do |order| %>
+  <li>
+   <a href="/snack/show/<%= order.id %>"><%= order.customer_name %></a>
+    <span class="text-input"><%= order.location %></span>
+     <span class="text-input"><%= order.description %></span>
+  </li>
+<% end %>
+</ul>
+

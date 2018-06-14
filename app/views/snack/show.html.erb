@@ -1,1 +1,16 @@
-<h2>Review Order</h2>
+<h1 class="header">Review Order</h1>
+<h4 class="header2">Here you can edit or cancel your order!</h4>
+<h4 class="header2">Or order again!</h4>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<div class="card"> 
+
+<h2>Name:<%= @order.customer_name %></h2>
+<h3>Location:<%= @order.location %></h3>
+<h3>Order:<%= @order.description %></h3>
+
+<a href="/snack/edit/<%= @order.id %>"><button class="button">Edit</button></a>
+<a href="/snack/destroy/<%= @order.id %>"><button class="button">Cancel</button></a>
+ <a href="/snack/index"> <button class="button">Order Again?</button></a>
+
+</div>
+

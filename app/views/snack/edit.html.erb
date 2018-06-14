@@ -1,0 +1,39 @@
+<div class="card">
+    <h2 class="header">Update Order</h2>
+    <h4 class="header2">Change your order here!</h4>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    <form action="/snack/update/<%= @order.id %>">
+    
+    <br><input class="text-input" name="name" type="text" value="<%= @order.customer_name %>"></br>
+    <br><input class="text-input" name="location" type="text" value="<%= @order.location %>"></br>
+    <br><input class="text-input" name="description" type="text" value="<%= @order.description %>"></br>
+    
+    
+<br><table></br>
+<tr>
+    <th>Snack</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Big Texas</td>
+    <td>$1</td>
+  </tr>
+   <tr>
+    <td>Sour Punch</td>
+    <td>$1</td>
+  </tr>
+   <tr>
+    <td>Sour Patch</td>
+    <td>$1</td>
+  </tr>
+   <tr>
+    <td>Gatorade</td>
+    <td>$1</td>
+  </tr>
+</table>
+
+ <br><input class="button add-new-order-button" type="submit" value="Update"></br>
+<br><a href="/snack/index"> <button class="button">Order Again?</button></a></br>
+    </form>
+</div>
